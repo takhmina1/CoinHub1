@@ -102,8 +102,6 @@ DATABASES = {
 
 
 
-
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -126,7 +124,14 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = '/static/' 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# STATIC_URL = 'static/'
+STATIC_ROOT = '/home/takhmina1234takhmina1234/CoinHub/static'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
